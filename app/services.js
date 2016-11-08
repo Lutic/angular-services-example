@@ -41,13 +41,15 @@
         }
 
         function greet(user) {
-            console.log("Hi ", user);
+            console.log(`${greetingMsg} ${user}`);
         }
 
         function configGreeting (greeting) {
             if (greeting) {
                 greetingMsg = greeting;
                 return this;
+            } else {
+                return greetingMsg;
             }
         }
     }

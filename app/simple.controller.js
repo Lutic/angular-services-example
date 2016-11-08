@@ -8,12 +8,12 @@
 
     function appConfig(userGreetingServiceProvider, officialGreeting) {
         // console.log(userGreetingServiceProvider);
-        // userGreetingServiceProvider.configGreeting(officialGreeting);
+        userGreetingServiceProvider.configGreeting(officialGreeting);
     }
 
     function Simple (userService, personService, userGreetingService, userName) {
         console.log(userService);
-        userService.setCurrentUser(userName);
+        //userService.setCurrentUser(userName);
         console.log(userService.getCurrentUser());
 
         console.log(personService);
